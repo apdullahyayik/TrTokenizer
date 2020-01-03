@@ -1,6 +1,6 @@
 # Turkish-Word-Tokenizer
-Tokenize words or given sentence.
-Considers Turkish punctuations and abbreviations structure
+Tokenize words of a given Turkish sentence.
+Basicly considers Turkish punctuations and structure of mostly used abbreviations.
 
 ### Usage
 sentence1 = "Senin adını kol saatimin kayışına tırnağımla kazıdım."
