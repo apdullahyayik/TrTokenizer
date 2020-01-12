@@ -19,11 +19,11 @@ def word_tokenize(sentence):
     numbers = r"\d+[.,:\d]+"
     any_word = r"[a-zğçşöüı]+"
     punctuations = r"[a-zğçşöüı]*[.,!?;:]"
-    
     word_regex = "|".join([acronym_each_dot,
                            acronym_end_dot,
                            suffixes,
                            numbers,
                            any_word,
                            punctuations])
+    
     return re.compile("%s"%word_regex, re.I).findall(sentence)
