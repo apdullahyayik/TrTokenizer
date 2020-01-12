@@ -1,6 +1,5 @@
 # Turkish-Word-Tokenizer
 Tokenize words of a given Turkish sentence.
-Basicly considers Turkish punctuations and structure of mostly used abbreviations.
 
 ### Usage
 
