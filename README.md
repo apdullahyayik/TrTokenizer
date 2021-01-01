@@ -1,22 +1,39 @@
-# Turkish-Word-Tokenizer
-Tokenize words of a given Turkish sentence.
+# TrTokenizer 🇹🇷
 
-### Usage
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-sentence_1 = "Saat 10:20 itibariyle, T.C. Merkez Bankası verilerine göre 1.25 oranında faiz indirimi yapıldı."
-print(word_tokenize(sentence_1))
+TrTokenizer is a complete solution for Turkish sentence and word tokenization with extensively-covering language
+conventions.
 
-['Saat', '10:20', 'itibariyle', ',', 'T.C.', 'Merkez', 'Bankası', 'verilerine', 'göre', '1.25', 'oranında', 'faiz', 'indirimi', 'yapıldı', '.']
+If you think that Natural language models always need robust, fast and accurate tokenizers, be sure that you are at the
+right place now.
 
-sentence_2 = "Senin adını kol saatimin kayışına tırnağımla kazıdım."
+Sentence tokenization approach uses non-prefix keyword given in 'tr_non_suffixes file'. This file can be expanded if
+required, for developer convenience lines start with # symbol are evaluated comments.
 
-print(word_tokenize(sentence_2))
+Designed regular expression are pre-compiled to speed-up performance.
 
-['Senin', 'adını', 'kol', 'saatimin', 'kayışına', 'tırnağımla', 'kazıdım', '.']
 
-sentence_3 = "T.C. Ankara'dan tüm dünyaya sevgi, saygı vs. çağrısı yaptı ve dolar 1.35 kuruş azaldı."
+### Basic Usage
 
-print(word_tokenize(sentence_3))
+```sh
+from TrTokenizer import SentenceTokenize, WordTokenize
 
-['T.C', "Ankara'dan", 'tüm', 'dünyaya', 'sevgi,', 'saygı', 'vs.', 'çağrısı', 'yaptı', 've', 'dolar', '1.35', 'kuruş', 'azaldı','.']
+sentence_tokenizer_object = SentenceTokenize()  # during object creation regexes are compiled only at once
 
+sentence_tokenizer_object.tokenize(<given paragraph as string>)
+
+word_tokenizer_object = WentenceTokenize()  # # during object creation regexes are compiled only at once
+
+word_tokenizer_object.tokenize(<given sentence as string>)
+
+```
+
+### TODO
+
+- Usage examples
+- Limitations
+- Prepare a simple guide for contribution
+- Cython C-API for performance
+- Release platform specific shared dynamic libraries 
+ 
