@@ -23,7 +23,7 @@ sentence_tokenizer_object = SentenceTokenize()  # during object creation regexes
 
 sentence_tokenizer_object.tokenize(<given paragraph as string>)
 
-word_tokenizer_object = WentenceTokenize()  # # during object creation regexes are compiled only at once
+word_tokenizer_object = WordTokenize()  # # during object creation regexes are compiled only at once
 
 word_tokenizer_object.tokenize(<given sentence as string>)
 
