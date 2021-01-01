@@ -1,6 +1,6 @@
 #
 #since: 24.11.2020
-#creator: Apdullah Yayık <apdullah.yayik@mobildev.com>
+#creator: Apdullah Yayık
 #
 # This is a non-breaking prefix list for the Turkish language.
 # The file is used for sentence tokenization (code/tokenizer/SentenceTokenizer class).
