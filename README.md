@@ -31,9 +31,10 @@ word_tokenizer_object.tokenize(<given sentence as string>)
 
 ### TODO
 
-- Usage examples
+- Usage examples (Done)
+- Cython C-API for performance (Done)
+- Release platform specific shared dynamic libraries (Done, only for Debian Linux with gcc compiler)
 - Limitations
 - Prepare a simple guide for contribution
-- Cython C-API for performance
-- Release platform specific shared dynamic libraries 
+
  
