@@ -8,7 +8,7 @@ conventions.
 If you think that Natural language models always need robust, fast and accurate tokenizers, be sure that you are at the
 right place now.
 
-Sentence tokenization approach uses non-prefix keyword given in 'tr_non_suffixes file'. This file can be expanded if
+Sentence tokenization approach uses non-prefix keyword given in 'tr_non_suffixes' file. This file can be expanded if
 required, for developer convenience lines start with # symbol are evaluated comments.
 
 Designed regular expression are pre-compiled to speed-up performance.
@@ -32,8 +32,8 @@ word_tokenizer_object.tokenize(<given sentence as string>)
 ### TODO
 
 - Usage examples (Done)
-- Cython C-API for performance (Done, see build/tr_tokenizer.c)
-- Release platform specific shared dynamic libraries (Done, only for Debian Linux with gcc compiler)
+- Cython C-API for performance (Done, build/tr_tokenizer.c)
+- Release platform specific shared dynamic libraries (Done, build/tr_tokenizer.cpython-38-x86_64-linux-gnu.so, only for Debian Linux with gcc compiler)
 - Limitations
 - Prepare a simple guide for contribution
 

@@ -1,9 +1,5 @@
-#
-#since: 24.11.2020
-#creator: Apdullah Yayık
-#
 # This is a non-breaking prefix list for the Turkish language.
-# The file is used for sentence tokenization (code/tokenizer/SentenceTokenizer class).
+# The file is used for sentence tokenization (tr_tokenizer/tokenizer/SentenceTokenizer class).
 #
 #ASSUMPTION:
 #
@@ -110,11 +106,9 @@ Corp
 Co
 # http://en.wiktionary.org/wiki/Category:Turkish_abbreviations
 Av
-# http://en.bab.la/phrases/business/abbreviations/english-turkish/
 no
 Başk.yard
 Bşk.yrd
-# http://www.learningpracticalturkish.com/turkish-acronyms.html
 Akad
 Alb
 Alm
@@ -196,7 +190,6 @@ TİC
 PAZ
 SAN
 CAD
-# bank_branch_names (Mobildev)
 SK
 ORG
 SAN
@@ -222,9 +215,8 @@ Yzb
 hayır
 
 # Ordinals are (apparently) done with . in Turkish - "1." = "1st" in English
-# Apdullah Yayık: Ordinals 1 to 10000 added to self.__non_breaking_suffixes, thus
-# they were deleted from here
-# Apdullah Yayık: Numbers that may be used in date were added
+# Ordinals 1 to 10000 added to self.__non_breaking_suffixes, thus they were deleted from here
+# Numbers that may be used in date were added
 01
 02
 03
