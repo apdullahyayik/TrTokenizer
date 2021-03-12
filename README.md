@@ -13,8 +13,15 @@ required, for developer convenience lines start with # symbol are evaluated comm
 
 Designed regular expression are pre-compiled to speed-up performance.
 
+## Install 
 
-## Basic Usage
+```sh
+git clone https://github.com/apdullahyayik/TrTokenizer.git
+```
+
+The library will be avaliable at pypi.
+
+## Usage
 
 ```sh
 from TrTokenizer import SentenceTokenize, WordTokenize
@@ -29,12 +36,10 @@ word_tokenizer_object.tokenize(<given sentence as string>)
 
 ```
 
-## TODO
+## To-do
 
 - Usage examples (Done)
 - Cython C-API for performance (Done, build/tr_tokenizer.c)
 - Release platform specific shared dynamic libraries (Done, build/tr_tokenizer.cpython-38-x86_64-linux-gnu.so, only for Debian Linux with gcc compiler)
 - Limitations
 - Prepare a simple guide for contribution
-
- 
