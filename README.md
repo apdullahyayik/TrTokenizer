@@ -19,7 +19,7 @@ Designed regular expression are pre-compiled to speed-up performance.
 git clone https://github.com/apdullahyayik/TrTokenizer.git
 ```
 
-The library will be avaliable at pypi.
+The library will be avaliable at pypi in the near future.
 
 ## Usage
 
