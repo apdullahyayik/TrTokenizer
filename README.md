@@ -1,6 +1,6 @@
 # TrTokenizer 🇹🇷
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/trtopicter)
 
 TrTokenizer is a complete solution for Turkish sentence and word tokenization with extensively-covering language
 conventions.
@@ -14,7 +14,7 @@ required, for developer convenience lines start with # symbol are evaluated comm
 Designed regular expression are pre-compiled to speed-up performance.
 
 
-### Basic Usage
+## Basic Usage
 
 ```sh
 from TrTokenizer import SentenceTokenize, WordTokenize
@@ -29,7 +29,7 @@ word_tokenizer_object.tokenize(<given sentence as string>)
 
 ```
 
-### TODO
+## TODO
 
 - Usage examples (Done)
 - Cython C-API for performance (Done, build/tr_tokenizer.c)
