@@ -8,6 +8,7 @@ __all__ = ['SentenceTokenizer', 'WordTokenizer']
 __version__ = '0.0.0.1'
 
 import os
+import pathlib
 from enum import Enum
 from typing import Optional, Tuple, Union
 
@@ -59,9 +60,8 @@ class SentenceTokenizer:
         prefix_type: int
         item: int
 
-        self.non_breaking_prefix_file = os.path.join(
-            re.search(pattern=r'(?P<folder_name>.*)/tr_tokenizer\.py', string=__file__
-                      )['folder_name'], 'tr_non_suffixes'
+        self.non_breaking_prefix_file = str(
+            pathlib.Path(__file__).parent.resolve() / "tr_non_suffixes"
         )
 
         if not os.path.isfile(self.non_breaking_prefix_file):
