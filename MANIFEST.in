@@ -1,1 +1,1 @@
-include trtokenizer*
+recursive-include trtokenizer *
