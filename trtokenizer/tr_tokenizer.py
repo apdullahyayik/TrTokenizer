@@ -38,7 +38,7 @@ class SentenceTokenizer:
         else:
             return f'Sentence tokenizer not integrated with look-up table'
 
-    def __init__(self):
+    def __init__(self, non_breaking_prefix_file: str = None):
         """Sentence tokenizer
 
         Parameters
@@ -60,9 +60,10 @@ class SentenceTokenizer:
         prefix_type: int
         item: int
 
-        self.non_breaking_prefix_file = str(
-            pathlib.Path(__file__).parent.resolve() / "tr_non_suffixes"
-        )
+        if self.non_breaking_prefix_file is None:
+            self.non_breaking_prefix_file = str(
+                pathlib.Path(__file__).parent.resolve() / "tr_non_suffixes"
+            )
 
         if not os.path.isfile(self.non_breaking_prefix_file):
             raise NonPrefixFileNotExistError(self.non_breaking_prefix_file)
