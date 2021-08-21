@@ -13,7 +13,7 @@ from typing import Optional, Tuple, Union
 
 import regex as re
 
-from errors import NonPrefixFileNotExistError
+from trtokenizer.errors import NonPrefixFileNotExistError
 
 
 class SentenceTokenizer:
