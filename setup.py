@@ -12,7 +12,7 @@ setup(
     # packages=['trtopicter'],
     packages=find_packages(),
     include_package_data=True,
-    version='0.0.2',
+    version='0.0.3',
     license='MIT',
     description='Sentence and word tokenizers for the Turkish language',
     long_description_content_type='text/markdown',
@@ -21,6 +21,7 @@ setup(
     author_email='apdullahyayik@gmail.com',
     url='https://github.com/apdullahyayik/TrTokenizer',
     download_url='https://github.com/apdullahyayik/TrTokenizer/archive/v0.0.2.tar.gz',
+    include_package_data = True,
     keywords=['sentence tokenizer', 'word tokenizer', 'Turkish language', 'natural language processing'],
     install_requires=['regex'],
     python_requires='>=3.4'
