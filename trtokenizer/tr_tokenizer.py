@@ -53,7 +53,7 @@ class SentenceTokenizer:
 
         """
 
-        self.non_breaking_prefix_file: str
+        self.non_breaking_prefix_file: str = non_breaking_prefix_file
         self.__non_breaking_prefixes: dict
         self.pre_compiled_regexes: dict
         line: str
