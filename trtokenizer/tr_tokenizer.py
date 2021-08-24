@@ -38,7 +38,7 @@ class SentenceTokenizer:
         else:
             return f'Sentence tokenizer not integrated with look-up table'
 
-    def __init__(self, non_breaking_prefix_file: str = None):
+    def __init__(self, non_breaking_prefix_file: Optional[str] = None):
         """Sentence tokenizer
 
         Parameters
@@ -53,7 +53,7 @@ class SentenceTokenizer:
 
         """
 
-        self.non_breaking_prefix_file: str = non_breaking_prefix_file
+        self.non_breaking_prefix_file: Optional[str] = non_breaking_prefix_file
         self.__non_breaking_prefixes: dict
         self.pre_compiled_regexes: dict
         line: str
