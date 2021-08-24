@@ -18,13 +18,13 @@ pip install trtokenizer
 ## Usage
 
 ```sh
-from TrTokenizer import SentenceTokenize, WordTokenize
+from trtokenizer.tr_tokenizer import SentenceTokenizer, WordTokenizer
 
-sentence_tokenizer_object = SentenceTokenize()  # during object creation regexes are compiled only at once
+sentence_tokenizer_object = SentenceTokenizer()  # during object creation regexes are compiled only at once
 
 sentence_tokenizer_object.tokenize(<given paragraph as string>)
 
-word_tokenizer_object = WordTokenize()  # # during object creation regexes are compiled only at once
+word_tokenizer_object = WordTokenizer()  # # during object creation regexes are compiled only at once
 
 word_tokenizer_object.tokenize(<given sentence as string>)
 
