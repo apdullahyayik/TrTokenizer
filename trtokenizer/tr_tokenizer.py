@@ -8,12 +8,13 @@ __all__ = ['SentenceTokenizer', 'WordTokenizer']
 __version__ = '0.0.0.1'
 
 import os
+import pathlib
 from enum import Enum
 from typing import Optional, Tuple, Union
 
 import regex as re
 
-from errors import NonPrefixFileNotExistError
+from trtokenizer.errors import NonPrefixFileNotExistError
 
 
 class SentenceTokenizer:
@@ -37,7 +38,7 @@ class SentenceTokenizer:
         else:
             return f'Sentence tokenizer not integrated with look-up table'
 
-    def __init__(self):
+    def __init__(self, non_breaking_prefix_file: str = None):
         """Sentence tokenizer
 
         Parameters
@@ -52,17 +53,17 @@ class SentenceTokenizer:
 
         """
 
-        self.non_breaking_prefix_file: str
+        self.non_breaking_prefix_file: str = non_breaking_prefix_file
         self.__non_breaking_prefixes: dict
         self.pre_compiled_regexes: dict
         line: str
         prefix_type: int
         item: int
 
-        self.non_breaking_prefix_file = os.path.join(
-            re.search(pattern=r'(?P<folder_name>.*)/tr_tokenizer\.py', string=__file__
-                      )['folder_name'], 'tr_non_suffixes'
-        )
+        if self.non_breaking_prefix_file is None:
+            self.non_breaking_prefix_file = str(
+                pathlib.Path(__file__).parent.resolve() / "tr_non_suffixes"
+            )
 
         if not os.path.isfile(self.non_breaking_prefix_file):
             raise NonPrefixFileNotExistError(self.non_breaking_prefix_file)

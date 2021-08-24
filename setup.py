@@ -12,7 +12,7 @@ setup(
     # packages=['trtopicter'],
     packages=find_packages(),
     include_package_data=True,
-    version='0.0.2',
+    version='0.0.3',
     license='MIT',
     description='Sentence and word tokenizers for the Turkish language',
     long_description_content_type='text/markdown',
