@@ -20,7 +20,7 @@ setup(
     author='Apdullah YAYIK',
     author_email='apdullahyayik@gmail.com',
     url='https://github.com/apdullahyayik/TrTokenizer',
-    download_url='https://github.com/apdullahyayik/TrTokenizer/archive/v0.0.2.tar.gz',
+    download_url='https://github.com/apdullahyayik/TrTokenizer/archive/refs/tags/0.0.3.tar.gz',
     keywords=['sentence tokenizer', 'word tokenizer', 'Turkish language', 'natural language processing'],
     install_requires=['regex'],
     python_requires='>=3.4'
