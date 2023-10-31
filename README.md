@@ -1,15 +1,17 @@
-# TrTokenizer 🇹🇷
+# 🧩 TrTokenizer
 
-[![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/trtokenizer)
-[![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://badge.fury.io/py/trtokenizer)
+A simple sentence tokenizer.
 
-TrTokenizer is a complete solution for Turkish sentence and word tokenization with extensively-covering language
-conventions. If you think that Natural language models always need robust, fast, and accurate tokenizers, be sure that you are at the
-the right place now. Sentence tokenization approach uses non-prefix keyword given in 'tr_non_suffixes' file. This file can be expanded if
-required, for developer convenience lines start with # symbol are evaluated as comments.
-Designed regular expressions are pre-compiled to speed-up the performance.
+![Python Version](https://img.shields.io/pypi/pyversions/trtokenizer.svg?style=plastic)
+![PyPI Version](https://badge.fury.io/py/trtokenizer)
 
-## Install
+## Overview
+
+**TrTokenizer** is a comprehensive solution for Turkish sentence and word tokenization, tailored to accommodate extensive language conventions. If you're seeking robust, fast, and accurate tokenization for natural language models, you've come to the right place. Our sentence tokenization approach employs a list of non-prefix keywords found in the 'tr_non_suffixes' file. Developers can conveniently expand this file, and lines starting with '#' are treated as comments. We've designed regular expressions that are pre-compiled for optimal performance.
+
+## Installation
+
+You can install **TrTokenizer** via pip:
 
 ```sh
 pip install trtokenizer
@@ -17,29 +19,37 @@ pip install trtokenizer
 
 ## Usage
 
-```sh
+Here's how you can use **TrTokenizer** in your Python projects:
+
+```python
 from trtokenizer.tr_tokenizer import SentenceTokenizer, WordTokenizer
 
-sentence_tokenizer_object = SentenceTokenizer()  # during object creation regexes are compiled only at once
+# Initialize a SentenceTokenizer object
+sentence_tokenizer = SentenceTokenizer()
 
-sentence_tokenizer_object.tokenize(<given paragraph as string>)
+# Tokenize a given paragraph as a string
+sentence_tokenizer.tokenize("Your paragraph goes here.")
 
-word_tokenizer_object = WordTokenizer()  # # during object creation regexes are compiled only at once
+# Initialize a WordTokenizer object
+word_tokenizer = WordTokenizer()
 
-word_tokenizer_object.tokenize(<given sentence as string>)
-
+# Tokenize a given sentence as a string
+word_tokenizer.tokenize("Your sentence goes here.")
 ```
 
-## To-do
+## To-do List
 
-- Usage examples (Done)
-- Cython C-API for performance (Done, build/tr_tokenizer.c)
-- Release platform specific shared dynamic libraries (Done, build/tr_tokenizer.cpython-38-x86_64-linux-gnu.so, only for
-  Debian Linux with gcc compiler)
-- Limitations
-- Prepare a simple guide for contribution
+Our to-do list includes:
 
-## Resources
+- Usage examples (Complete)
+- Cython C-API for enhanced performance (Complete, see `build/tr_tokenizer.c`)
+- Release platform-specific shared dynamic libraries (Complete, e.g., `build/tr_tokenizer.cpython-38-x86_64-linux-gnu.so`, available for Debian Linux with GCC compiler)
+- Document any limitations
+- Provide a straightforward guide for contributing
 
-* [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/)
-* [Bogazici University CMPE-561](https://www.cmpe.boun.edu.tr/tr/courses/cmpe561)
+## Additional Resources
+
+Explore more about natural language processing and related topics:
+
+- [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/)
+- [Bogazici University CMPE-561](https://www.cmpe.boun.edu.tr/tr/courses/cmpe561)
