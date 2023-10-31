@@ -2,8 +2,8 @@
 
 A simple sentence tokenizer.
 
-![Python Version](https://img.shields.io/pypi/pyversions/trtokenizer.svg?style=plastic)
-![PyPI Version](https://badge.fury.io/py/trtokenizer)
+[![Python Version](https://img.shields.io/pypi/pyversions/trtokenizer.svg?style=for-the-badge)](https://pypi.org/project/trtokenizer/)
+[![PyPI Version](https://img.shields.io/pypi/v/trtokenizer.svg?style=for-the-badge)](https://pypi.org/project/trtokenizer/)
 
 ## Overview
 
